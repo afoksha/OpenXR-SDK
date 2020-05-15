@@ -1,6 +1,7 @@
 #ifndef OPENXR_PLATFORM_H_
 #define OPENXR_PLATFORM_H_ 1
 
+#include "openxr_platform_dependencies.h" 
 /*
 ** Copyright (c) 2017-2020 The Khronos Group Inc.
 **
