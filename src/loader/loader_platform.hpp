@@ -173,7 +173,7 @@ static void LoaderPlatformLibraryClose(LoaderPlatformLibraryHandle library) { Fr
 static void *LoaderPlatformLibraryGetProcAddr(LoaderPlatformLibraryHandle library, const std::string &name) {
     assert(library);
     assert(name.size() > 0);
-    return GetProcAddress(library, name.c_str());
+    return (void*) GetProcAddress(library, name.c_str());
 }
 
 static std::string LoaderPlatformLibraryGetProcAddrAddrError(const std::string &name) {

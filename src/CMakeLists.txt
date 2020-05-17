@@ -179,8 +179,8 @@ function(compile_glsl run_target_name)
 endfunction()
 
 if(WIN32)
-    add_definitions(-DXR_USE_GRAPHICS_API_D3D11)
-    add_definitions(-DXR_USE_GRAPHICS_API_D3D12)
+    #add_definitions(-DXR_USE_GRAPHICS_API_D3D11)
+    #add_definitions(-DXR_USE_GRAPHICS_API_D3D12)
 endif()
 
 # Check for the existence of the secure_getenv or __secure_getenv commands

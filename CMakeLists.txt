@@ -36,6 +36,9 @@ set(TESTS_FOLDER "Tests")
 set(API_LAYERS_FOLDER "Layers")
 set(SAMPLES_FOLDER "Samples")
 
+
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+
 option(BUILD_FORCE_GENERATION "Force re-generation of files even in the presence of pre-generated copies, replacing those copies." OFF)
 
 if(BUILD_FORCE_GENERATION AND NOT PYTHON_EXECUTABLE)
